@@ -1,0 +1,17 @@
+/project
+│
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── background.js
+│   ├── product.js
+│   ├── stock.js
+│   ├── sale.js
+│   ├── profit.js
+│   ├── ledger.js
+│   └── scanner.js
+├── sounds/
+│   └── alert.ogg
+└── picture/
+    └── Ai.png

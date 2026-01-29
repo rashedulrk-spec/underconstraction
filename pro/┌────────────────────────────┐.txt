@@ -1,0 +1,30 @@
+┌────────────────────────────┐
+│        UI (HTML)           │
+│                            │
+│  Dashboard / POS / Ledger  │
+│  Stock / Profit / Scanner  │
+└────────────┬───────────────┘
+             │
+             ▼
+┌────────────────────────────┐
+│        JavaScript          │
+│                            │
+│  product.js   → Products   │
+│  stock.js     → Stock Log  │
+│  sale.js      → POS Sale   │
+│  profit.js    → Profit     │
+│  ledger.js    → Expense    │
+│  scanner.js   → Barcode    │
+│  background.js→ Animation  │
+└────────────┬───────────────┘
+             │
+             ▼
+┌────────────────────────────┐
+│      localStorage          │
+│                            │
+│ products                   │
+│ stockLogs                  │
+│ sales                      │
+│ ledger                     │
+│ alerted                    │
+└────────────────────────────┘
