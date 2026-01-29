@@ -1,0 +1,81 @@
+<!-- 
+  নোট:
+  - পুরো UI structure
+  - সব JS & CSS এখানে load হবে
+-->
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Shop POS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+<!-- 📝 NOTE:
+Browser Tab Icon (Favicon)
+-->
+<link rel="icon" type="image/png" href="picture/favicon.png">
+
+</head>
+<body>
+
+<!-- নোট: Background animation canvas -->
+<canvas id="network"></canvas>
+
+<!-- নোট: Sound for stock alert -->
+<audio id="lowStockSound" src="sounds/alert.ogg"></audio>
+
+<section class="hero">
+  <h1>Daily Ledger & Stock</h1>
+  <p>Smart Shop POS System</p>
+</section>
+
+<!-- DASHBOARD -->
+<section class="panel dashboard">
+  <div class="box">Total Sales: <span id="total-sales">৳0</span></div>
+  <div class="box">Total Cost: <span id="total-cost">৳0</span></div>
+  <div class="box">Total Profit: <span id="total-profit">৳0</span></div>
+</section>
+
+<!-- PROFIT TABLE -->
+<section class="panel">
+  <h2>📊 Profit Report</h2>
+  <table>
+    <thead>
+      <tr><th>Product</th><th>Qty</th><th>Profit</th></tr>
+    </thead>
+    <tbody id="profit-body"></tbody>
+  </table>
+</section>
+
+<!-- LEDGER -->
+<section class="panel">
+  <h2>📒 Daily Expense Ledger</h2>
+  <form id="ledger-form">
+    <input id="desc" placeholder="Description">
+    <input id="amount" type="number" placeholder="Amount">
+    <select id="type">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <button>Add</button>
+  </form>
+
+  <table>
+    <tbody id="ledger-body"></tbody>
+  </table>
+</section>
+
+<!-- SCRIPTS -->
+<script src="js/background.js"></script>
+<script src="js/product.js"></script>
+<script src="js/stock.js"></script>
+<script src="js/sale.js"></script>
+<script src="js/profit.js"></script>
+<script src="js/ledger.js"></script>
+<script src="js/scanner.js"></script>
+
+</body>
+</html>
