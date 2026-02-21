@@ -1,0 +1,97 @@
+<!--
+================================================
+INDEX.HTML (FINAL)
+Purpose:
+- Full screen layout
+- Watermark background image
+- Canvas animation layer
+- Main title content
+================================================
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>POS System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="initPOS()">
+
+<h2>🛒 POS Terminal</h2>
+
+<div class="pos-container">
+
+  <!-- PRODUCT LIST -->
+  <div class="products">
+    <h3>Products</h3>
+
+    <button onclick="addToCart('Rice', 50)">Rice - ৳50</button>
+    <button onclick="addToCart('Oil', 120)">Oil - ৳120</button>
+    <button onclick="addToCart('Sugar', 80)">Sugar - ৳80</button>
+    <button onclick="addToCart('Milk', 60)">Milk - ৳60</button>
+
+  </div>
+
+  <!-- CART -->
+  <div class="cart">
+    <h3>Cart</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>X</th>
+        </tr>
+      </thead>
+      <tbody id="cartBody"></tbody>
+    </table>
+
+    <h3>Total: ৳ <span id="grandTotal">0</span></h3>
+
+    <button onclick="saveSale()" class="save-btn">
+      💾 Complete Sale
+    </button>
+
+  </div>
+
+</div>
+
+<script src="js/guard.js"></script>
+<script src="js/pos.js"></script>
+  <!-- Main CSS -->
+
+</head>
+<body>
+
+<!--
+=========================================
+WATERMARK BACKGROUND IMAGE
+=========================================
+-->
+<div class="bg-watermark"></div>
+
+<!--
+=========================================
+MOUSE REACTIVE CANVAS
+=========================================
+-->
+<canvas id="network"></canvas>
+
+<!--
+=========================================
+MAIN CONTENT
+=========================================
+-->
+<div class="app">
+  <h1>Ai Tec POS System</h1>
+  <p>Smart Inventory & Sales Management</p>
+</div>
+
+<!-- Background Animation Script -->
+<script src="background.js"></script>
+
+</body>
+</html>

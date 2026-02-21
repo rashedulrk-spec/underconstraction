@@ -1,0 +1,112 @@
+<!--
+================================================
+INDEX.HTML (FINAL)
+Purpose:
+- Full screen layout
+- Watermark background image
+- Canvas animation layer
+- Main title content
+================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI-TEC POS - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/auth.js"></script>
+</head>
+
+<body onload="applyRolePermissions()">
+
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">AI-TEC POS</h2>
+
+      <ul>
+        <li id="menu-dashboard">
+          <a href="dashboard.html">Dashboard</a>
+        </li>
+
+        <li id="menu-pos">
+          <a href="pos.html">POS</a>
+        </li>
+
+        <li id="menu-users">
+          <a href="users.html">Users</a>
+        </li>
+
+        <li id="menu-reports">
+          <a href="reports.html">Reports</a>
+        </li>
+
+        <li>
+          <a href="#" onclick="logout()">Logout</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+      <header class="topbar">
+        <h1>Dashboard</h1>
+        <div class="user-info">
+          Welcome, <strong id="welcomeUser"></strong>
+        </div>
+      </header>
+
+      <section class="cards">
+
+        <div class="card">
+          <h3>Total Sales</h3>
+          <p id="totalSales">৳ 0</p>
+        </div>
+
+        <div class="card">
+          <h3>Total Users</h3>
+          <p id="totalUsers">0</p>
+        </div>
+
+        <div class="card">
+          <h3>System Status</h3>
+          <p style="color:lightgreen;">ACTIVE</p>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
+<!--
+=========================================
+WATERMARK BACKGROUND IMAGE
+=========================================
+-->
+<div class="bg-watermark"></div>
+
+<!--
+=========================================
+MOUSE REACTIVE CANVAS
+=========================================
+-->
+<canvas id="network"></canvas>
+
+<!--
+=========================================
+MAIN CONTENT
+=========================================
+-->
+
+
+<!-- Background Animation Script -->
+<script src="background.js"></script>
+
+</body>
+</html>

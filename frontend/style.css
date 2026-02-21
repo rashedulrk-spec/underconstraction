@@ -1,0 +1,88 @@
+/*
+================================================
+STYLE.CSS
+Purpose:
+- Dark tech background
+- Watermark logo shifted down
+- Clean centered content
+================================================
+*/
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  /* Clean professional gradient */
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+}
+
+/* Login container */
+.login-box {
+  background: rgba(0,0,0,.7);
+  padding: 30px;
+  width: 320px;
+  color: #fff;
+  border-radius: 14px;
+  text-align: center;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: #2fb3c4;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Watermark background */
+.bg-watermark {
+  position: fixed;
+  inset: 0;
+  background: url("Ai.png") no-repeat center 60%;
+  background-size: 55%;
+  opacity: 0.09;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Canvas layer */
+#network {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+}
+
+/* Main text */
+.app {
+  position: relative;
+  z-index: 3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.app h1 {
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.app p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}

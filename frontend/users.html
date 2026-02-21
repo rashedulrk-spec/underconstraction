@@ -1,0 +1,82 @@
+<!--
+================================================
+INDEX.HTML (FINAL)
+Purpose:
+- Full screen layout
+- Watermark background image
+- Canvas animation layer
+- Main title content
+================================================
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Users Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Users Management</h2>
+
+<div>
+  <input id="username" placeholder="Username">
+  <input id="password" placeholder="Password">
+  <select id="role">
+    <option value="admin">Admin</option>
+    <option value="cashier">Cashier</option>
+  </select>
+  <button onclick="addUser()">Add User</button>
+</div>
+
+<hr>
+
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Role</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="userTable"></tbody>
+</table>
+
+
+<script src="js/guard.js"></script>
+<script src="js/users.js"></script>
+  <!-- Main CSS -->
+
+</head>
+
+
+<!--
+=========================================
+WATERMARK BACKGROUND IMAGE
+=========================================
+-->
+<div class="bg-watermark"></div>
+
+<!--
+=========================================
+MOUSE REACTIVE CANVAS
+=========================================
+-->
+<canvas id="network"></canvas>
+
+<!--
+=========================================
+MAIN CONTENT
+=========================================
+-->
+<div class="app">
+  <h1>Ai Tec POS System</h1>
+  <p>Smart Inventory & Sales Management</p>
+</div>
+
+<!-- Background Animation Script -->
+<script src="background.js"></script>
+
+</body>
+</html>
