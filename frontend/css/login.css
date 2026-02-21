@@ -1,0 +1,89 @@
+/*
+====================================================
+FILE: css/login.css
+PURPOSE:
+- Login page professional dark UI
+- Centered card layout
+- Clean & distraction-free
+WHY:
+- Admin/User যেন স্পষ্ট বুঝে login করে
+====================================================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #0f172a; /* Dark blue-black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Card */
+.login-box {
+  width: 350px;
+  background: #020617;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+/* Title */
+.login-box h1 {
+  color: #38bdf8;
+  margin-bottom: 5px;
+}
+
+.login-box p {
+  color: #94a3b8;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* Button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #0ea5e9;
+}
+
+/* Error Message */
+.error {
+  margin-top: 15px;
+  color: #f87171;
+  font-size: 14px;
+}
