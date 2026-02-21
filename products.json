@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "companyId": 1,
+    "name": "Rice",
+    "price": 60,
+    "stock": 100
+  }
+]
